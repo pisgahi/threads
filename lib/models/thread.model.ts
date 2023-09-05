@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import { boolean } from "zod";
 
 const threadSchema = new mongoose.Schema({
   text: { type: String, required: true },
@@ -10,7 +9,7 @@ const threadSchema = new mongoose.Schema({
   },
   community: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "communiyt",
+    ref: "Community",
   },
   createdAt: {
     type: Date,

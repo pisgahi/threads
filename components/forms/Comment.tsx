@@ -6,7 +6,6 @@ import {
   FormField,
   FormItem,
   FormLabel,
-  FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { useForm } from "react-hook-form";
@@ -45,7 +44,7 @@ const Comment = ({ threadId, currentUserImg, currentUserId }: Props) => {
       JSON.parse(currentUserId),
       pathname
     );
-    
+
     form.reset();
   };
 

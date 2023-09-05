@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import { boolean } from "zod";
 
 const communitySchema = new mongoose.Schema({
   id: { type: String, required: true },
@@ -17,7 +16,7 @@ const communitySchema = new mongoose.Schema({
       ref: "Thread",
     },
   ],
-  member: [
+  members: [
     {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
